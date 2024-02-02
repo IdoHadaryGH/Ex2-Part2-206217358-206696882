@@ -12,13 +12,12 @@ class App {
 	public static void classifyTriangle(int a, int b, int c) {
 
 		if (isEquilateral(a, b, c)) {
-			triangle = Triangle_Types.Scalene;
+			triangle = Triangle_Types.equilateral;
 		} else if (isIsosceles(a, b, c)) {
 			triangle = Triangle_Types.isosceles;
 		} else if (isTriangle(a, b, c)) {
 			triangle = Triangle_Types.Nottriangle;
 		} else {
-
 			triangle = Triangle_Types.Scalene;
 		}
 
