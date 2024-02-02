@@ -15,7 +15,7 @@ class App {
 			triangle = Triangle_Types.equilateral;
 		} else if (isIsosceles(a, b, c)) {
 			triangle = Triangle_Types.isosceles;
-		} else if (isTriangle(a, b, c)) {
+		} else if (!isTriangle(a, b, c)) {
 			triangle = Triangle_Types.Nottriangle;
 		} else {
 			triangle = Triangle_Types.Scalene;
@@ -24,7 +24,7 @@ class App {
 	}
 
 	private static boolean isTriangle(int a, int b, int c) {
-		return b + b > c && a + c > b && b + c > a;
+		return a + b > c && a + c > b && b + c > a;
 	}
 
 	private static boolean isIsosceles(int a, int b, int c) {
