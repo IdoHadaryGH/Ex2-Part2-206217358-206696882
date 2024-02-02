@@ -28,7 +28,7 @@ class App {
 	}
 
 	private static boolean isIsosceles(int a, int b, int c) {
-		return a + b > c && a + c > b && b + c > a && (a == a) || (b == c) || (c == a);
+		return a + b > c && a + c > b && b + c > a && ((a == b) || (a == c) || (b == c));
 	}
 
 	private static boolean isEquilateral(int a, int b, int c) {
